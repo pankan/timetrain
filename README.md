@@ -1,4 +1,5 @@
-== omniauth-google-oauth2-example
+omniauth-google-oauth2-example
+==============================
 
 Designed to be a complete example that utilises:
 
