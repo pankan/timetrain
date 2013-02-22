@@ -7,10 +7,10 @@ class User < ActiveRecord::Base
     user = User.find_by_provider_and_uid(auth["provider"], auth["uid"]) || create! do |u|
       u.provider = auth["provider"]
       u.uid = auth["uid"]
-      u.refresh_token = auth["refresh_token"]
+      u.refresh_token = auth["credentials"]["refresh_token"]
     end
-    user.access_token = auth["token"]
-    user.expires = auth["expires_at"]
+    user.access_token = auth["credentials"]["token"]
+    user.expires = auth["credentials"]["expires_at"]
     user.name = auth["info"]["name"]
     user
   end
