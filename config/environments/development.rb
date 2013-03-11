@@ -1,5 +1,3 @@
-require 'parseconfig'
-
 OmniauthGoogleOauth2Example::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
@@ -36,7 +34,4 @@ OmniauthGoogleOauth2Example::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
-
-  # Override the secrets
-  config.secrets = ParseConfig.new(ENV['HOME']+"/.web_app_secrets")
 end
