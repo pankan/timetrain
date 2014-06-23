@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>timetrain</title>
+  <script src="js/vis.js"></script>
+  <script src="js/train.js"></script>
+  <link href="css/vis.css" rel="stylesheet" type="text/css" />
+  <link href="css/train.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <img style="height: 80px;" src="images/logo.png"></img>
+<div id="visualization">
+  <div class="menu">
+        <input type="button" id="zoomIn" value="Zoom in"/>
+        <input type="button" id="zoomOut" value="Zoom out"/>
+        <input type="button" id="moveLeft" value="Move left"/>
+        <input type="button" id="moveRight" value="Move right"/>
+        <input type="button" id="reset" value="Reset"/>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+  // DOM element where the Timeline will be attached
+  var container = document.getElementById('visualization');
+
+  // Create a json evnt data set
+  var items = new vis.DataSet([
+    {id: 1, content: twitter, start: '2008-04-20', type: 'point'},
+    {id: 2, content: facebook, start: '2010-04-14', type: 'point'},
+    {id: 3, content: gplus, start: '2011-04-18', type: 'point'},
+  ]);
+
+
+  // Create a Timeline
+  var timeline = new vis.Timeline(container, items, options);
+
+    // attach events to the navigation buttons
+    document.getElementById('zoomIn').onclick    = function () { zoom(-0.2); };
+    document.getElementById('zoomOut').onclick   = function () { zoom( 0.2); };
+    document.getElementById('moveLeft').onclick  = function () { move( 0.2); };
+    document.getElementById('moveRight').onclick = function () { move(-0.2); };
+    document.getElementById('reset').onclick     = function () { window.location.reload(); };
+</script>
+</body>
+</html>
