@@ -1,7 +1,5 @@
 .vis.timeline {
 }
-.vis.timeline {
-}
 
 
 .vis.timeline.root {
@@ -146,26 +144,32 @@
 .vis.timeline .item {
   position: absolute;
   color: #1A1A1A;
-  /*border-color: #d34836;*/
+  background: none;
+  cursor: pointer;
   border-width: 0;
   background-color: none;
   display: inline-block;
   padding: 5px;
 }
 
-.vis.timeline .item.point.selected {
+.vis.timeline .item.point.selected,
+.vis.timeline .item.gpoint.selected,
+.vis.timeline .item.tpoint.selected,
+.vis.timeline .item.fpoint.selected {
   background-color: #E5E5E5;
 }
-
-.vis.timeline .item.point {
-  background: none;
-  cursor: pointer;
-}
+.vis.timeline .item.point  { color: #909090; }
+.vis.timeline .item.gpoint { color: #D34836; }
+.vis.timeline .item.tpoint { color: #4099FF; }
+.vis.timeline .item.fpoint { color: #3B5998; }
 
 .vis.timeline .item.dot {
   position: absolute;
   padding: 0;
-  border-width: 0;
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 4px;
+  border-color: inherit;
 }
 
 .vis.timeline .item.range,
