@@ -2,9 +2,13 @@ Rails.application.routes.draw do
   
   get 'auth/:provider/callback', to: 'sessions#create'
   get 'auth/failure', to: redirect('/')
+<<<<<<< HEAD
   get 'signout', to: 'sessions#view', as: 'signout'
     get 'activity', to: 'sessions#view', as: 'view'
 
+=======
+  get 'signout', to: 'sessions#destroy', as: 'signout'
+>>>>>>> ba5d303... Phase 2
 
   resources :sessions, only: [:create, :destroy]
   resource :home, only: [:show]

@@ -5,7 +5,10 @@ class CreateUsers < ActiveRecord::Migration
       t.string :uid
       t.string :name
       t.string :oauth_token
+<<<<<<< HEAD
      
+=======
+>>>>>>> ba5d303... Phase 2
 
       t.timestamps
     end

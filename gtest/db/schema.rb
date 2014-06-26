@@ -11,9 +11,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20140626062123) do
 
 # Could not dump table "users" because of following NoMethodError
 #   undefined method `[]' for nil:NilClass
+=======
+ActiveRecord::Schema.define(version: 20140625052250) do
+
+  create_table "users", force: true do |t|
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "name"
+    t.string   "oauth_token"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+>>>>>>> ba5d303... Phase 2
 
 end

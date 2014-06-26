@@ -5,6 +5,7 @@ class User < ActiveRecord::Base
       user.uid = auth.uid
       user.name = auth.info.name
       user.oauth_token = auth.credentials.token
+<<<<<<< HEAD
       GooglePlus.access_token = user.oauth_token
     
       user.activity = GooglePlus::Activity.get(111871732782220259822)
@@ -19,4 +20,9 @@ class User < ActiveRecord::Base
   	activity = GooglePlus::Activity.get(111871732782220259822)
   	end
   end
+=======
+      user.save!
+    end
+  end
+>>>>>>> ba5d303... Phase 2
 end
