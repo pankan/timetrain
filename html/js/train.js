@@ -33,27 +33,28 @@ var options = {
       end:   range.end.valueOf()   + interval * percentage
     });
   }
+// Content generators
+  // //fb post item
+  // var facebook = document.createElement('div');
+  // var imgfb = document.createElement('img');
+  // imgfb.src = 'images/facebook.png';
+  // imgfb.style.width = '12px';
+  // imgfb.style.height = '12px';
+  // facebook.appendChild(imgfb);
 
-  //fb post item
-  var facebook = document.createElement('div');
-  var imgfb = document.createElement('img');
-  imgfb.src = 'images/facebook.png';
-  imgfb.style.width = '12px';
-  imgfb.style.height = '12px';
-  facebook.appendChild(imgfb);
+  // //twitter post item
+  // var twitter = document.createElement('div');
+  // var imgtw = document.createElement('img');
+  // imgtw.src = 'images/twitter.png';
+  // imgtw.style.width = '12px';
+  // imgtw.style.height = '12px';
+  // twitter.appendChild(imgtw);
 
-  //twitter post item
-  var twitter = document.createElement('div');
-  var imgtw = document.createElement('img');
-  imgtw.src = 'images/twitter.png';
-  imgtw.style.width = '12px';
-  imgtw.style.height = '12px';
-  twitter.appendChild(imgtw);
-
-  //google plus post item
-  var gplus = document.createElement('div');
-  var imggp = document.createElement('img');
-  imggp.src = 'images/gplus.png';
-  imggp.style.width = '12px';
-  imggp.style.height = '12px';
-  gplus.appendChild(imggp);
+  // //google plus post item
+  // var gplus = document.createElement('div');
+  // var imggp = document.createElement('img');
+  // imggp.src = 'images/gplus.png';
+  // imggp.style.width = '12px';
+  // imggp.style.height = '12px';
+  // gplus.appendChild(imggp);
+//Content generator end
