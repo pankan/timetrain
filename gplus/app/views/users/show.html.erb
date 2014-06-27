@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @user.name %>
+</p>
+
+<p>
+  <strong>Provider:</strong>
+  <%= @user.provider %>
+</p>
+
+<p>
+  <strong>Oauth token:</strong>
+  <%= @user.oauth_token %>
+</p>
+
+<p>
+  <strong>Array:</strong>
+  <%= @user.arr %>
+</p>
+
+<p>
+  <strong>activity:</strong>
+  <%= @user.activity_list %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>
